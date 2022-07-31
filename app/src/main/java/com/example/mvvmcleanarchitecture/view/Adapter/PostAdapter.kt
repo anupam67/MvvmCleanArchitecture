@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.example.mvvmcleanarchitecture.ResponseHandlerUtil.PostDiffUtil
 import com.example.mvvmcleanarchitecture.data.Post
 import com.example.mvvmcleanarchitecture.databinding.PostItemBinding
 

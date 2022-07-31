@@ -3,9 +3,9 @@ package com.example.mvvmcleanarchitecture.data
 import com.google.gson.annotations.SerializedName
 
 
-data class Post(
-    @SerializedName("userId") val userId: Int,
-    @SerializedName("id") val id: Int,
-    @SerializedName("title") val title: String,
-    @SerializedName("body") val photos: String,
+data class Post (
+    @SerializedName("userId" ) var userId : Int?    = null,
+    @SerializedName("id"     ) var id     : Int?    = null,
+    @SerializedName("title"  ) var title  : String? = null,
+    @SerializedName("body"   ) var body   : String? = null
 )
