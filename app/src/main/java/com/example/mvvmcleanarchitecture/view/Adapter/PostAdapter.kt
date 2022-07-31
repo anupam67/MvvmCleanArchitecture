@@ -1,12 +1,10 @@
 package com.example.mvvmcleanarchitecture.view.Adapter
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mvvmcleanarchitecture.data.Post
-import com.example.mvvmcleanarchitecture.data.PostDiffUtil
 import com.example.mvvmcleanarchitecture.databinding.PostItemBinding
 
 class PostAdapter : RecyclerView.Adapter<PostAdapter.PostViewHolder>() {
