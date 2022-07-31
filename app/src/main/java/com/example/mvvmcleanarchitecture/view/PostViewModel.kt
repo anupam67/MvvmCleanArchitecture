@@ -13,7 +13,7 @@ import javax.inject.Inject
 @HiltViewModel
 class PostViewModel @Inject constructor(private val postRepository: PostRepository) : ViewModel(){
 
-    private val postData : MutableLiveData<Resource<List<ApiResponse>>> = MutableLiveData()
+    val postData : MutableLiveData<Resource<ApiResponse>> = MutableLiveData()
 
     fun getPostValue() = viewModelScope.launch(Dispatchers.IO) {
         postData.postValue(Resource.Loading())

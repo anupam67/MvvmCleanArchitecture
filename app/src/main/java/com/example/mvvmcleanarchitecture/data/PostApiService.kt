@@ -5,5 +5,5 @@ import retrofit2.http.GET
 
 interface PostApiService {
  @GET("/")
- suspend fun getPosts() : Response<List<ApiResponse>>
+ suspend fun getPosts() : Response<ApiResponse>
 }

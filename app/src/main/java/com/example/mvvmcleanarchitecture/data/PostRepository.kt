@@ -6,11 +6,11 @@ import javax.inject.Inject
 
 class PostRepository @Inject constructor(private val postApiService:PostApiService) {
 
-    suspend fun getPostList() : Resource<List<ApiResponse>>{
+    suspend fun getPostList() : Resource<ApiResponse>{
       return responseToResource(postApiService.getPosts())
     }
 
-    private fun responseToResource(response: Response<List<ApiResponse>>): Resource<List<ApiResponse>> {
+    private fun responseToResource(response: Response<ApiResponse>): Resource<ApiResponse> {
       if(response.isSuccessful){
          response.body()?.let { result  ->
              return Resource.Success(result) }

@@ -1,5 +1,6 @@
 package com.example.mvvmcleanarchitecture.di
 
+import com.example.mvvmcleanarchitecture.BuildConfig
 import com.example.mvvmcleanarchitecture.data.PostApiService
 import com.google.gson.GsonBuilder
 import dagger.Module

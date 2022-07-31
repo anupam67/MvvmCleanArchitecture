@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MvvmCleanArchitecture</string>
+        <string name="find_post">Find Post</string>
+        <string name="search_post">Search Post</string>
 </resources>
